@@ -1,0 +1,12 @@
+{
+  "name": "quote",
+  "description": "Quote a given message by link",
+  "options": [
+    {
+      "name": "link",
+      "description": "URL of a specific message. (Right click -> Copy Message Link)",
+      "type": 3,
+      "required": true
+    }
+  ]
+}
