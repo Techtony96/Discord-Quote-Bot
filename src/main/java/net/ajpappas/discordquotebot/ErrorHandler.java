@@ -1,6 +1,6 @@
-package com.ajpappas.discordquotebot;
+package net.ajpappas.discordquotebot;
 
-import com.ajpappas.discordquotebot.exception.UserException;
+import net.ajpappas.discordquotebot.exception.UserException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import reactor.core.publisher.Mono;

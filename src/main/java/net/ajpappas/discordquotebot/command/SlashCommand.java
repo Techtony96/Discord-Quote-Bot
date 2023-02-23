@@ -1,4 +1,4 @@
-package com.ajpappas.discordquotebot.command;
+package net.ajpappas.discordquotebot.command;
 
 import discord4j.core.event.domain.interaction.ChatInputInteractionEvent;
 import reactor.core.publisher.Mono;

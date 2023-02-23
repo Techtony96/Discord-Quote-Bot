@@ -1,8 +1,8 @@
-package com.ajpappas.discordquotebot.listeners;
+package net.ajpappas.discordquotebot.listeners;
 
-import com.ajpappas.discordquotebot.ErrorHandler;
-import com.ajpappas.discordquotebot.EventFilters;
-import com.ajpappas.discordquotebot.QuoteGenerator;
+import net.ajpappas.discordquotebot.ErrorHandler;
+import net.ajpappas.discordquotebot.EventFilters;
+import net.ajpappas.discordquotebot.QuoteGenerator;
 import discord4j.core.GatewayDiscordClient;
 import discord4j.core.event.domain.message.MessageCreateEvent;
 import discord4j.core.object.component.ActionRow;

@@ -1,4 +1,4 @@
-package com.ajpappas.discordquotebot.service;
+package net.ajpappas.discordquotebot.service;
 
 import discord4j.common.JacksonResources;
 import discord4j.discordjson.json.ApplicationCommandRequest;

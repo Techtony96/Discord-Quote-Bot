@@ -1,7 +1,7 @@
-package com.ajpappas.discordquotebot.listeners;
+package net.ajpappas.discordquotebot.listeners;
 
-import com.ajpappas.discordquotebot.ErrorHandler;
-import com.ajpappas.discordquotebot.command.SlashCommand;
+import net.ajpappas.discordquotebot.ErrorHandler;
+import net.ajpappas.discordquotebot.command.SlashCommand;
 import discord4j.core.GatewayDiscordClient;
 import discord4j.core.event.domain.interaction.ChatInputInteractionEvent;
 import org.springframework.beans.factory.annotation.Autowired;
