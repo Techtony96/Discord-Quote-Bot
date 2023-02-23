@@ -41,7 +41,7 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Extract Jar Layers
-      run: java -Djarmode=layertools -jar target/*.jar extract --destination target/extracted
+      run: mkdir -p target/extracted && java -Djarmode=layertools -jar target/*.jar extract --destination target/extracted
       
     - name: Log in to the Container registry
       uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
