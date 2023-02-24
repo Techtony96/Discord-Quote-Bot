@@ -1,12 +1,12 @@
 package net.ajpappas.discord.quotebot.listeners;
 
-import net.ajpappas.discord.quotebot.ErrorHandler;
-import net.ajpappas.discord.quotebot.EventFilters;
-import net.ajpappas.discord.quotebot.QuoteGenerator;
 import discord4j.core.GatewayDiscordClient;
 import discord4j.core.event.domain.message.MessageCreateEvent;
 import discord4j.core.object.component.ActionRow;
 import discord4j.core.spec.MessageCreateSpec;
+import net.ajpappas.discord.common.util.ErrorHandler;
+import net.ajpappas.discord.common.util.EventFilters;
+import net.ajpappas.discord.quotebot.service.QuoteGenerator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

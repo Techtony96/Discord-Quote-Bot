@@ -17,7 +17,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.ClassPathResource;
 
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "net.ajpappas.discord")
 public class DiscordQuoteBot implements CommandLineRunner {
 
     private static final Logger log = LogManager.getLogger();

@@ -1,7 +1,5 @@
-package net.ajpappas.discord.quotebot;
+package net.ajpappas.discord.quotebot.service;
 
-import net.ajpappas.discord.quotebot.exception.UserException;
-import net.ajpappas.discord.quotebot.util.MessageUtil;
 import discord4j.common.util.Snowflake;
 import discord4j.core.GatewayDiscordClient;
 import discord4j.core.object.component.Button;
@@ -12,8 +10,10 @@ import discord4j.core.object.entity.channel.GuildChannel;
 import discord4j.core.spec.EmbedCreateSpec;
 import discord4j.rest.http.client.ClientException;
 import discord4j.rest.util.Image;
+import net.ajpappas.discord.common.exception.UserException;
+import net.ajpappas.discord.common.util.MessageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 import reactor.function.TupleUtils;
 import reactor.util.function.Tuple2;
@@ -22,7 +22,7 @@ import reactor.util.function.Tuples;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-@Component
+@Service
 public class QuoteGenerator {
 
     @Autowired

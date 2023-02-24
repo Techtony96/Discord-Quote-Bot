@@ -1,11 +1,12 @@
 package net.ajpappas.discord.quotebot.command;
 
-import net.ajpappas.discord.quotebot.QuoteGenerator;
-import net.ajpappas.discord.quotebot.exception.UserException;
 import discord4j.core.event.domain.interaction.ChatInputInteractionEvent;
 import discord4j.core.object.command.ApplicationCommandInteractionOption;
 import discord4j.core.object.command.ApplicationCommandInteractionOptionValue;
 import discord4j.core.object.component.ActionRow;
+import net.ajpappas.discord.common.command.SlashCommand;
+import net.ajpappas.discord.common.exception.UserException;
+import net.ajpappas.discord.quotebot.service.QuoteGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;

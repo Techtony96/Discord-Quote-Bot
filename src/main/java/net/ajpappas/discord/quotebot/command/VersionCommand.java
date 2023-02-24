@@ -2,6 +2,7 @@ package net.ajpappas.discord.quotebot.command;
 
 import discord4j.common.util.TimestampFormat;
 import discord4j.core.event.domain.interaction.ChatInputInteractionEvent;
+import net.ajpappas.discord.common.command.SlashCommand;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Component;
