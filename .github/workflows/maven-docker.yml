@@ -35,12 +35,14 @@ jobs:
         distribution: 'temurin'
         cache: maven
         server-id: github
+        server-username:
+        server-password: PAT_TOKEN
         settings-path: ${{ github.workspace }}
       
     - name: Build with Maven
       run: mvn -B package --file pom.xml
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_PACKAGES_MAVEN_READ_PAT }}
+        PAT_TOKEN: ${{ secrets.GH_PACKAGES_MAVEN_READ_PAT }}
 
     - name: Extract Jar Layers
       run: mkdir -p target/extracted && java -Djarmode=layertools -jar target/*.jar extract --destination target/extracted
