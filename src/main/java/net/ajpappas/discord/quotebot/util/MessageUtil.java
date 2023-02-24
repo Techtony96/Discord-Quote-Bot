@@ -1,4 +1,4 @@
-package net.ajpappas.discordquotebot.util;
+package net.ajpappas.discord.quotebot.util;
 
 import discord4j.common.util.Snowflake;
 import discord4j.core.object.entity.Message;

@@ -1,4 +1,4 @@
-package net.ajpappas.discordquotebot.command;
+package net.ajpappas.discord.quotebot.command;
 
 import discord4j.common.util.TimestampFormat;
 import discord4j.core.event.domain.interaction.ChatInputInteractionEvent;

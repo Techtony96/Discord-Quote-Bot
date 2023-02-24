@@ -1,4 +1,4 @@
-package net.ajpappas.discordquotebot;
+package net.ajpappas.discord.quotebot;
 
 import discord4j.core.event.domain.message.MessageCreateEvent;
 

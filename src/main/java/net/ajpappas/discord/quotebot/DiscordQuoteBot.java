@@ -1,4 +1,4 @@
-package net.ajpappas.discordquotebot;
+package net.ajpappas.discord.quotebot;
 
 import discord4j.core.DiscordClientBuilder;
 import discord4j.core.GatewayDiscordClient;

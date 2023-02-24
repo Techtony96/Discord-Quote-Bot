@@ -1,7 +1,7 @@
-package net.ajpappas.discordquotebot;
+package net.ajpappas.discord.quotebot;
 
-import net.ajpappas.discordquotebot.exception.UserException;
-import net.ajpappas.discordquotebot.util.MessageUtil;
+import net.ajpappas.discord.quotebot.exception.UserException;
+import net.ajpappas.discord.quotebot.util.MessageUtil;
 import discord4j.common.util.Snowflake;
 import discord4j.core.GatewayDiscordClient;
 import discord4j.core.object.component.Button;

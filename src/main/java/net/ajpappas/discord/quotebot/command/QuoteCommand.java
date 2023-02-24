@@ -1,7 +1,7 @@
-package net.ajpappas.discordquotebot.command;
+package net.ajpappas.discord.quotebot.command;
 
-import net.ajpappas.discordquotebot.QuoteGenerator;
-import net.ajpappas.discordquotebot.exception.UserException;
+import net.ajpappas.discord.quotebot.QuoteGenerator;
+import net.ajpappas.discord.quotebot.exception.UserException;
 import discord4j.core.event.domain.interaction.ChatInputInteractionEvent;
 import discord4j.core.object.command.ApplicationCommandInteractionOption;
 import discord4j.core.object.command.ApplicationCommandInteractionOptionValue;
