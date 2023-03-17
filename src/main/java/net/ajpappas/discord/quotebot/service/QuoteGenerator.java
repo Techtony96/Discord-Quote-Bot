@@ -55,6 +55,30 @@ public class QuoteGenerator {
                 }));
     }
 
+    public Mono<Tuple2<EmbedCreateSpec, Button>> quote(Message quotedMessage) {
+        Mono<Guild> quotedGuildMono = quotedMessage.getGuild();
+        Mono<GuildChannel> quotedChannelMono = quotedMessage.getChannel().ofType(GuildChannel.class);
+
+        return Mono.zip(quotedChannelMono, quotedGuildMono)
+                .map(TupleUtils.function((quotedChannel, quotedGuild) -> {
+
+                    EmbedCreateSpec embed = EmbedCreateSpec.builder()
+                            .author(quotedMessage.getAuthor().map(user -> user.getUsername() + "#" + user.getDiscriminator()).orElse("Unknown"), "", quotedMessage.getAuthor().map(User::getAvatarUrl).orElse(null))
+                            .description(quotedMessage.getContent())
+                            //.image(quotedMessage.getAttachments().stream().findAny())
+                            .timestamp(quotedMessage.getTimestamp())
+                            .footer(quotedGuild.getName(), quotedGuild.getIconUrl(Image.Format.WEB_P).orElse(null))
+                            .build();
+
+                    Button button = Button.link(MessageUtil.getLink(quotedMessage), "Jump to Message");
+
+
+
+                    return Tuples.of(embed, button);
+                }));
+    }
+
+
     private Mono<Message> getReferencedMessage(String url) {
         Matcher matcher = REFERENCED_MESSAGE_PATTERN.matcher(url);
         if (!matcher.find())
